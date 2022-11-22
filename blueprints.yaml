@@ -2,14 +2,13 @@ name: Sender
 slug: sender
 type: plugin
 version: 1.0.0
-description: Form actions for the Sender mailing service
+description: Form actions for the Sender.net mailing service
 icon: arrow-right
 author:
   name: Ari Cooper-Davis
   email: grav@cooper-davis.net
 homepage: https://github.com/aricooperdavis/grav-plugin-sender
-demo: http://demo.yoursite.com
-keywords: grav, plugin, etc
+keywords: grav, grav-plugin, sender, mailing-list
 bugs: https://github.com/aricooperdavis/grav-plugin-sender/issues
 docs: https://github.com/aricooperdavis/grav-plugin-sender/blob/develop/README.md
 license: MIT
