@@ -1,0 +1,5 @@
+enabled: true
+sender_token: your_sender_api_token
+messages:
+  success: 'Thanks, you''re now subscribed 😃'
+  error: 'Sorry, something went wrong, please try again later 😢'

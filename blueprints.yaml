@@ -1,0 +1,50 @@
+name: Sender
+slug: sender
+type: plugin
+version: 1.0.0
+description: Form actions for the Sender mailing service
+icon: arrow-right
+author:
+  name: Ari Cooper-Davis
+  email: grav@cooper-davis.net
+homepage: https://github.com/aricooperdavis/grav-plugin-sender
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/aricooperdavis/grav-plugin-sender/issues
+docs: https://github.com/aricooperdavis/grav-plugin-sender/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.7.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    sender_token:
+      type: textarea
+      label: PLUGIN_SENDER.SENDER_TOKEN
+      help: PLUGIN_SENDER.SENDER_TOKEN_HELP
+    messages:
+      type: fieldset
+      title: PLUGIN_SENDER.MESSAGES_TITLE
+      text: PLUGIN_SENDER.MESSAGES_TEXT
+      icon: exclamation
+      fields:
+        messages.success:
+          type: text
+          label: PLUGIN_SENDER.SUCCESS_MESSAGE
+          help: PLUGIN_SENDER.SUCCESS_MESSAGE_HELP
+        messages.error:
+          type: text
+          label: PLUGIN_SENDER.ERROR_MESSAGE
+          help: PLUGIN_SENDER.ERROR_MESSAGE_HELP

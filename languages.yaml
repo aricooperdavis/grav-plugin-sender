@@ -1,0 +1,10 @@
+en:
+  PLUGIN_SENDER:
+    SENDER_TOKEN: Sender token
+    SENDER_TOKEN_HELP: Your Sender API access token
+    MESSAGES_TITLE: Messages
+    MESSAGES_TEXT: These are the messages displayed when a user fills in the sign-up form
+    SUCCESS_MESSAGE: Success
+    SUCCESS_MESSAGE_HELP: The message displayed when a subscription is successfull
+    ERROR_MESSAGE: Error
+    ERROR_MESSAGE_HELP: The message displayed when something goes wrong

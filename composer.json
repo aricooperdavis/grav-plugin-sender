@@ -1,0 +1,25 @@
+{
+  "name": "aricooperdavis/sender",
+  "type": "grav-plugin",
+  "description": "Accept subscriptions/unsubscriptions to the Sender mailing service",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/aricooperdavis/grav-plugin-sender",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ari Cooper-Davis",
+      "email": "grav@cooper-davis.net",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.3.6",
+    "guzzlehttp/guzzle": "^7.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\Sender\\": "classes/"
+    },
+    "classmap":  ["sender.php"]
+  }
+}
