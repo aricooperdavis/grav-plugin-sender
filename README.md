@@ -53,7 +53,7 @@ Note that if you use the Admin Plugin, a file with your configuration named send
 It's really simple to get your forms working with the Sender API:
 
 1. [Generate an API token](https://app.sender.net/settings/tokens) in your Sender account and add it to the plugin configuration.
-2. Create a form the form action added by this plugin:
+2. Create a form that uses the form action added by this plugin:
     - `sender-subscribe`:
         
         This action [creates a new subscriber](https://api.sender.net/subscribers/add-subscriber/) with the properties given in the form data. Any fields given that do not appear in the API method definition will be ignored.
