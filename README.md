@@ -10,16 +10,17 @@ Sender has a generous ["free forever" tier](https://www.sender.net/pricing/) tha
 
 Installing the Sender plugin can be done in one of three ways: The GPM (Grav Package Manager) installation method lets you quickly install the plugin with a simple terminal command, the manual method lets you do so via a zip file, and the admin method lets you do so via the Admin Plugin.
 
-### GPM Installation (Preferred)
-
+<details>
+<summary><h3>GPM Installation</h3></summary>
 To install the plugin via the [GPM](http://learn.getgrav.org/advanced/grav-gpm), through your system's terminal (also called the command line), navigate to the root of your Grav-installation, and enter:
 
     bin/gpm install sender
 
 This will install the Sender plugin into your `/user/plugins`-directory within Grav. Its files can be found under `/your/site/grav/user/plugins/sender`.
+</details>
 
-### Manual Installation
-
+<details>
+<summary><h3>Manual Installation</h3></summary>
 To install the plugin manually, download the zip-version of this repository and unzip it under `/your/site/grav/user/plugins`. Then rename the folder to `sender`. You can find these files on [GitHub](https://github.com/aricooperdavis/grav-plugin-sender) or via [GetGrav.org](http://getgrav.org/downloads/plugins#extras).
 
 You should now have all the plugin files under
@@ -27,10 +28,12 @@ You should now have all the plugin files under
     /your/site/grav/user/plugins/sender
 	
 > NOTE: This plugin is a modular component for Grav which may require other plugins to operate, please see its [blueprints.yaml-file on GitHub](https://github.com/aricooperdavis/grav-plugin-sender/blob/master/blueprints.yaml).
+</details>
 
-### Admin Plugin
-
+<details>
+<summary><h3>Admin Plugin</h3></summary>
 If you use the Admin Plugin, you can install the plugin directly by browsing the `Plugins`-menu and clicking on the `Add` button.
+</details>
 
 ## Configuration
 
@@ -121,6 +124,8 @@ Some things to note about the above example:
 - We can include fields, such as `captcha`, that aren't in the API definition, and these will work as intended but won't be passed to the Sender API call.
 - Custom fields for inclusion in the Sender API call need to be named `fields.*` in order to be included.
 - We can add other actions before and after the `sender-subscribe` action and they'll behave properly (although the `sender-subscribe` action overwrites the form message set by the `message` action in order to report the results of the Sender API call).
+
+You can see a similar setup on my own website: [cooper-davis.net/blog](https://cooper-davis.net/blog)
 
 ## Contributing
 
